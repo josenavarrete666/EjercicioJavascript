@@ -1,0 +1,19 @@
+
+.clase{
+    text-align: right;
+}
+
+#caja{
+  width: 800px;
+  border: 15px solid lavender;
+  padding: 20px;
+  margin: auto;
+}
+.parrafo{
+  text-align: center;
+  color:grey;
+}
+.titulo{
+  text-align: center;
+}
+

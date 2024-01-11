@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioFormulario  </title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="JS/javasc.js"></script>
+</head>
+<body>
+    <div class="container "id="caja">
+        <h2 class="titulo">Formulario inscripción de participación</h2>
+        <p class="parrafo"> Formulario de inscripción para ayudantia, para realizar limpieza y descontaminación en la isla de Chiloé, por parte 
+            de la fundación Chile Limpio.</p>
+        <br>
+        <div class="form-group">
+            <label for="rut">Indicar su rut, sin guión.</label>
+            <input type="text" id="rut" name="rut" placeholder="11111111k" 
+                class="form-control" minlength="3" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Apellido paterno: </label>
+            <input type="text" id="lname" name="lname" placeholder="Olivares..." 
+                class="form-control" minlength="3" maxlength="20" required>
+        </div>
+
+        <div class="form-group">
+            <label for="mname">Apellido materno: </label>
+            <input type="text" id="mname" name="mname" placeholder="Rozas..." 
+                class="form-control" minlength="3" maxlength="20" required>    
+        </div>    
+                
+        <div class="form-group">
+            <label for="names">Nombres: </label>
+            <input type="text" id="names" name="names" placeholder="Catalina sofia..." 
+                class="form-control" minlength="3" maxlength="20" required>
+        </div>
+
+        <div class="form-group">
+        <label for="birth">Seleccione su fecha de nacimiento: </label><br>
+        <input type="date" id="birth" name="birth" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Indique su edad: </label>
+            <input type="number" class="form-control" id="age" name="age" min="18" max="35" required>
+        </div>
+        
+        <div class="form-group">
+        <label for="gender">Seleccione genero con el cual se identifique. </label><br>
+        <select id="gender" name="gender" class="form-control">
+            <option value="M">Masculino</option>
+            <option value="F">Femenino</option>
+            <option value="O">Otro</option>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label for="mail">Email: </label>
+            <input type="text" id="mail" name="mail" placeholder="aaaaeeee@mail.com ..." 
+                class="form-control" required>  
+        </div>    
+
+        <div class="form-group">
+            <label for="phone">Indicar su número de telefono:</label>
+            <input type="text" id="phone" name="phone" placeholder="99999999" 
+                class="form-control" minlength="9" maxlength="12" required>                  
+        </div>
+
+        <div class="form-group">
+            <label for="job">Indique su profesión:</label>
+            <input type="text" id="job" name="job"  
+                class="form-control" required>  
+        </div>     
+        
+        <div>
+        <label for="moti">Seleccione motivo por el que le interesa participar: </label><br>
+        <select id="moti" name="motivo" class="form-control">
+            <option value="m1">Me interesa participar para conocer esta área</option>
+            <option value="m2">Conozco esta área, me interesa seguir ay</option>
+            <option value="o">Otro</option>
+        </select><br><br>
+        </div>
+             
+        <input type="submit" value="Enviar" class="btn btn-primary" onclick="Confirmar()">
+        
+        <div class="form-group">
+            <label for="show">Datos que usted ingresó:</label>
+            <textarea class="form-control" rows="11" id="show" name="show"></textarea>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+</body>
+</html>
